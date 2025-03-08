@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Client Data Sender
  * Description: Sends data to a central server.
- * Version: 1.2
+ * Version: 1.3
  * Author: Your Name
  */
 
@@ -47,7 +47,7 @@ class ClientDataSender {
     ]);
 
     if (!is_wp_error($response) && wp_remote_retrieve_response_code($response) == 200) {
-        set_transient('client_data_sent', true, 1 * HOUR_IN_SECONDS); // Limit sending every 12 hours
+        set_transient('client_data_sent', true, 12 * HOUR_IN_SECONDS); // Limit sending every 12 hours
     }
 }
 
