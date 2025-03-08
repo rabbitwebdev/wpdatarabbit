@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Client Data Sender
  * Description: Sends data to a central server.
- * Version: 1.0
+ * Version: 1.2
  * Author: Your Name
  */
 
